@@ -7,6 +7,9 @@ const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 
+const AppError = require('./utls/appError');
+const errorController = require('./controllers/errorController');
+
 const apprenticeshipRoute = require('./routes/apprenticeshipRoute');
 const internshipRoute = require('./routes/internshipRoute');
 const jobRoute = require('./routes/jobRoute');
@@ -50,5 +53,13 @@ app.use(
 app.use('/api/v1/apprenticeships', apprenticeshipRoute);
 app.use('/api/v1/internships', internshipRoute);
 app.use('/api/v1/jobs', jobRoute);
+
+// unhandled Routes
+app.all('*', (req, res, next) => {
+    next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
+});
+
+// Error Handle Middleware
+app.use(errorController);
 
 module.exports = app;
