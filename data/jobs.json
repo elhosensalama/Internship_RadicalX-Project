@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "638a47cfdd01b8e9c8761235"
+  },
+  "roleDescription": {
+    "salary": {
+      "paid": true,
+      "count": 40000,
+      "term": "no term"
+    },
+    "title": "Software Enginner Internship",
+    "description": "this is a job for selecting talented Software Enginners",
+    "jobType": "Internship",
+    "employmentType": "Full Time",
+    "numberOfOpenings": 5,
+    "location": "Cairo"
+  },
+  "candidatePreferances": {
+    "yearsOfExprience": 3,
+    "yearsOfExprienceWithSkill": [
+      {
+        "_id": {
+          "$oid": "638a47cfdd01b8e9c8761236"
+        },
+        "skill": "Node.Js",
+        "yearsOfExp": 2
+      },
+      {
+        "_id": {
+          "$oid": "638a47cfdd01b8e9c8761237"
+        },
+        "skill": "MongoDB",
+        "yearsOfExp": 1
+      },
+      {
+        "_id": {
+          "$oid": "638a47cfdd01b8e9c8761238"
+        },
+        "skill": "Express",
+        "yearsOfExp": 2
+      }
+    ],
+    "backgroundCheck": "yes",
+    "certifications": [
+      {
+        "_id": {
+          "$oid": "638a47cfdd01b8e9c8761239"
+        },
+        "certificate": "cs",
+        "answer": "yes"
+      }
+    ],
+    "languages": [
+      {
+        "_id": {
+          "$oid": "638a47cfdd01b8e9c876123a"
+        },
+        "lang": "en",
+        "yearsOfExp": 1
+      }
+    ]
+  },
+  "__v": 0
+}]

@@ -1,0 +1,116 @@
+[{
+  "_id": {
+    "$oid": "6389e9a8de318c705bf018f4"
+  },
+  "startDate": {
+    "$date": {
+      "$numberLong": "1663624800000"
+    }
+  },
+  "endDate": {
+    "$date": {
+      "$numberLong": "1669845600000"
+    }
+  },
+  "apprenticeshipTitle": "RadicalX Platform Design & Development",
+  "companyLogo": "logo.png",
+  "companyDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, molestiae placeat amet reiciendis provident odio unde iusto maxime quibusdam quos obcaecati nostrum ex. Nisi sit amet eaque suscipit commodi libero.",
+  "apprenticeshipDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, molestiae placeat amet reiciendis provident odio unde iusto maxime quibusdam quos obcaecati nostrum ex. Nisi sit amet eaque suscipit commodi libero.",
+  "introVideo": "Intro Video.mp4",
+  "teamType": "Web Platform",
+  "teamRoles": [
+    {
+      "requiredSkills": [
+        "iOS",
+        "Swift"
+      ],
+      "complimentraySkills": [
+        "Objective-C",
+        "ARM"
+      ],
+      "locationPrefereces": [
+        "North America",
+        "Asia",
+        "South America"
+      ],
+      "_id": {
+        "$oid": "6389e9a8de318c705bf018f5"
+      },
+      "role": "Product Manager",
+      "description": "We are looking for a Back-End Web Developer responsible for managing the interchange of data between the server and the users. Your primary focus will be development of all server-side logic, definition and maintenance of the central database, and ensuring high performance and responsiveness to requests from the front-end.",
+      "minimumHoursPerWeek": 30
+    },
+    {
+      "requiredSkills": [
+        "iOS",
+        "Swift"
+      ],
+      "complimentraySkills": [
+        "Objective-C",
+        "ARM"
+      ],
+      "locationPrefereces": [
+        "North America",
+        "Asia",
+        "South America"
+      ],
+      "_id": {
+        "$oid": "6389e9a8de318c705bf018f6"
+      },
+      "role": "Back-end Developer",
+      "description": "We are looking for a Back-End Web Developer responsible for managing the interchange of data between the server and the users. Your primary focus will be development of all server-side logic, definition and maintenance of the central database, and ensuring high performance and responsiveness to requests from the front-end.",
+      "minimumHoursPerWeek": 30
+    },
+    {
+      "requiredSkills": [
+        "iOS",
+        "Swift"
+      ],
+      "complimentraySkills": [
+        "Objective-C",
+        "ARM"
+      ],
+      "locationPrefereces": [
+        "North America",
+        "Asia",
+        "South America"
+      ],
+      "_id": {
+        "$oid": "6389e9a8de318c705bf018f7"
+      },
+      "role": "Front-end Developer",
+      "description": "We are looking for a Back-End Web Developer responsible for managing the interchange of data between the server and the users. Your primary focus will be development of all server-side logic, definition and maintenance of the central database, and ensuring high performance and responsiveness to requests from the front-end.",
+      "minimumHoursPerWeek": 30
+    }
+  ],
+  "teamAdmin": [
+    {
+      "_id": {
+        "$oid": "6389e9a8de318c705bf018f8"
+      },
+      "name": "elhosen salama",
+      "photo": "user-2.jpg",
+      "email": "elhosen@gmail.com",
+      "linkedinURL": ""
+    },
+    {
+      "_id": {
+        "$oid": "6389e9a8de318c705bf018f9"
+      },
+      "name": "ahmed ali",
+      "photo": "user-2.jpg",
+      "email": "ahmed@gmail.com",
+      "linkedinURL": ""
+    },
+    {
+      "_id": {
+        "$oid": "6389e9a8de318c705bf018fa"
+      },
+      "name": "khalid mohamed",
+      "photo": "user-2.jpg",
+      "email": "khalid@gmail.com",
+      "linkedinURL": ""
+    }
+  ],
+  "__v": 0
+}]

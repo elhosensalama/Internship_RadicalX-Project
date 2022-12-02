@@ -1,0 +1,105 @@
+[{
+  "_id": {
+    "$oid": "638a0df8838f9eb43e891270"
+  },
+  "internshipDescription": {
+    "mentor": {
+      "name": "elhosen salama",
+      "photo": "user.jpg",
+      "email": "elhosen@gmail.com",
+      "linkedinUrl": "linkedin.com/me/elhosen"
+    },
+    "category": [
+      "Technology",
+      "Development"
+    ],
+    "recommendedRoles": [
+      "Front-end",
+      "back-end",
+      "UX-Design"
+    ],
+    "webLinkes": [
+      "mycompany.com",
+      "twitter.com"
+    ],
+    "description": "this is an internship description",
+    "location": "Cairo Egypt",
+    "benefits": "emaple benefits",
+    "introVideo": "intor.mp4"
+  },
+  "internshipGuide": {
+    "overview": {
+      "brief": {
+        "description": "this is a description ",
+        "video": "video.mp4"
+      },
+      "requirements": {
+        "description": "this is a description ",
+        "video": "video.mp4"
+      },
+      "milestones": {
+        "description": "this is a description ",
+        "video": "video.mp4"
+      }
+    },
+    "schedule": {
+      "duration": {
+        "description": "this is a description ",
+        "video": "video.mp4"
+      },
+      "timeline": {
+        "description": "this is a description ",
+        "video": "video.mp4"
+      },
+      "deliverables": {
+        "description": "this is a description ",
+        "video": "video.mp4"
+      }
+    },
+    "resources": {
+      "curated": {
+        "description": "this is a description ",
+        "video": "video.mp4"
+      },
+      "events": {
+        "description": "this is a description ",
+        "video": "video.mp4"
+      }
+    }
+  },
+  "Settings": {
+    "basicSettings": {
+      "access": {
+        "private": false,
+        "hidden": false
+      },
+      "security": {
+        "textCopying": false
+      },
+      "internshipUrl": "internship url"
+    },
+    "heroImage": "photo.png"
+  },
+  "internshipTitle": "Web Development internship",
+  "surveys": [
+    {
+      "questions": [
+        "q1",
+        "q2"
+      ],
+      "_id": {
+        "$oid": "638a0df8838f9eb43e891271"
+      }
+    },
+    {
+      "questions": [
+        "Q3",
+        "q4"
+      ],
+      "_id": {
+        "$oid": "638a0df8838f9eb43e891272"
+      }
+    }
+  ],
+  "__v": 0
+}]
