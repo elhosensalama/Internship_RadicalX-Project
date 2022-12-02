@@ -1,44 +1,74 @@
 exports.deleteOne = Model => {
-    return (req, res, next) => {
-        res.status(200).json({
-            status: 'success',
-            data: 'This route is not yet defined!'
-        });
+    return async (req, res, next) => {
+        const document = await Model.findByIdAndDelete(req.params.id);
+
+        if (!document) {
+            return next(new AppError('No document found with that id', 404));
+        }
+        res.status(204).send();
     };
 };
 
 exports.updateOne = Model => {
-    return (req, res, next) => {
-        res.status(200).json({
-            status: 'success',
-            data: 'This route is not yet defined!'
+    return async (req, res, next) => {
+        const document = await Model.findByIdAndUpdate(req.params.id, req.body, {
+            new: true,
+            runValidators: true
+        });
+
+        if (!document) {
+            return next(new AppError('No document found with that id', 404));
+        }
+
+        res.status(201).json({
+            stutus: 'success',
+            data: {
+                document
+            }
         });
     };
 };
 
 exports.createOne = Model => {
-    return (req, res, next) => {
-        res.status(200).json({
-            status: 'success',
-            data: 'This route is not yet defined!'
+    return async (req, res, next) => {
+        const document = await Model.create(req.body);
+
+        res.status(201).json({
+            stutus: 'success',
+            data: {
+                document
+            }
         });
     };
 };
 
 exports.getOne = Model => {
-    return (req, res, next) => {
+    return async (req, res, next) => {
+        const document = await Model.findById(req.params.id);
+
+        if (!document) {
+            return next(new AppError('No document found with that id', 404));
+        }
+
         res.status(200).json({
             status: 'success',
-            data: 'This route is not yet defined!'
+            data: {
+                document
+            }
         });
     };
 };
 
 exports.getAll = Model => {
-    return (req, res, next) => {
+    return async (req, res, next) => {
+        const documents = await Model.find();
+
         res.status(200).json({
             status: 'success',
-            data: 'This route is not yet defined!'
+            results: documents.length,
+            data: {
+                documents
+            }
         });
     };
 };
