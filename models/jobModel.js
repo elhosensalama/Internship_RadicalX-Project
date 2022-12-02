@@ -4,16 +4,29 @@ const jobSchema = new mongoose.Schema(
     {
         roleDescription: {
             title: {
-                type: String
+                type: String,
+                required: [true, 'A Job must have a title']
             },
             description: {
-                type: String
+                type: String,
+                required: [true, 'A Job must have a description']
             },
             jobType: {
                 type: String,
+                enum: {
+                    values: ['Internship', 'Volunteer', 'Experiential Learning', 'Job', 'Fellowship', 'On-site'],
+                    message:
+                        'A Job type must be on of (Internship, Volunteer, Experiential Learning, Job, Fellowship, On-site) '
+                },
+                required: [true, 'A Job must have a type']
             },
             employmentType: {
                 type: String,
+                enum: {
+                    values: ['Full Time', 'Part Time'],
+                    message: 'An employment type must be on of (Full Time , Part Time)'
+                },
+                required: [true, 'A Job must have a employment type']
             },
             numberOfOpenings: Number,
             salary: {
@@ -27,12 +40,14 @@ const jobSchema = new mongoose.Schema(
                 }
             },
             location: {
-                type: String
+                type: String,
+                required: [true, 'A Job must have a location']
             }
         },
         candidatePreferances: {
             yearsOfExprience: {
-                type: Number
+                type: Number,
+                required: [true, 'the field of years of exprience can not be empty!']
             },
             yearsOfExprienceWithSkill: [
                 {
@@ -42,12 +57,14 @@ const jobSchema = new mongoose.Schema(
             ],
             backgroundCheck: {
                 type: String,
+                enum: ['yes', 'no']
             },
             certifications: [
                 {
                     certificate: String,
                     answer: {
                         type: String,
+                        enum: ['yes', 'no']
                     }
                 }
             ],
